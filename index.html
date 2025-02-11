@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Explorer for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Career Explorer Logo" class="logo">
+        <h1>Career Explorer for Kids</h1>
+    </header>
+    <main>
+        <section id="welcome">
+            <img src="images/welcome.png" alt="Welcome Image" class="welcome-image">
+            <h2>Welcome!</h2>
+            <p>Explore different careers through interactive stories and tests.</p>
+            <button onclick="startExploration()">Start Exploring</button>
+        </section>
+        <section id="story" class="hidden">
+            <img src="images/story.png" alt="Story Image" class="story-image">
+            <h2>Interactive Story</h2>
+            <p id="story-content">Once upon a time...</p>
+            <button onclick="nextStory()">Next</button>
+        </section>
+        <section id="test" class="hidden">
+            <img src="images/test.png" alt="Test Image" class="test-image">
+            <h2>Career Test</h2>
+            <p id="question">Question will appear here.</p>
+            <input type="text" id="answer" placeholder="Your answer">
+            <button onclick="nextQuestion()">Next</button>
+        </section>
+        <section id="result" class="hidden">
+            <img src="images/result.png" alt="Result Image" class="result-image">
+            <h2>Result</h2>
+            <p id="result-content">Your recommended career is...</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
